@@ -1,0 +1,32 @@
+
+ @media (max-width: 420px) {
+    .boxCard{
+        width: 90%;
+     
+    }
+  }
+
+  @media  (min-width : 420px) and (max-width : 768px) {  
+
+  
+    .boxCard{
+        width: 40%;
+       
+    }
+  }
+  
+  @media   (min-width : 768px) and (max-width : 1024px) {  
+
+  
+    .boxCard{
+        width: 28%;
+       
+    }
+  }
+  
+  @media  (min-width: 1024px) {
+    .boxCard{
+        width: 22%;
+      
+    }
+  } 

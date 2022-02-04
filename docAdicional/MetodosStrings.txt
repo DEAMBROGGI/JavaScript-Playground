@@ -1,0 +1,61 @@
+Detallo los metodos que utilizamos para trabajar con textos (strings)
+
+//COLOCAR LA PRIMER LETRA DEL NOMBRE EN MAYUSCULA Y EL RESTO EN MINUSCULA 
+
+                nombre(dato en bruto obtenido desde el input)
+                    .split(" ")         ---Obtenemos lo que este contenido entre espacios en blanco
+                    .join("")           ---Unimos las palabras resultantes de la separacion anterior
+                    nombre.charAt(0)    ---Separamos la primer POSICION resultante del metodo join()
+                    .toUpperCase()      ---Al caracter obtenido por el metodo charAt(0) lo pasamos a mayusculas
+                    +                   ---Concatenamos (unimos) lo obtenido en el paso anterior con lo siguiente
+                    nombre.slice(1)     ---Eliminamos la primer letra 
+                    .toLowerCase()      ---El resultado anterior lo pasamos a minuscula
+
+//DAR FORMATO A TEXTOS (EJEMPLO APELLIDOS COMPUESTOS O DIRECCIONES)
+
+                val (dato en bruto obtenido desde input)
+                    .trim()             ---Eliminamos espacios en blanco al inicio y al final
+                    .toLowerCase()      ---Pasamos todo el texto a minuscula 
+                    .split(" ")         ---Separamos las palabra entre dos espacios
+                    .filter(Boolean)    ---Filtramos y solo dejamos aquellos valores en los cuales us valor boleano se true (ver abajo valores boleanos)
+                    .map( caracter => caracter[0].toUpperCase() + caracter.substr(1) ) 
+                    .join(' ')          ---Volvemos a unir todo en una cadena
+
+        --**--DETALLE DE MAP--**--
+            .map(                       ---Nos permite pasar o recorrer cada uno de lo objetos separados y resultantes despues del filtrado
+                caracter =>             ---Representa el identicador que nosotros le vamos a dar a los objetos por separado y deberia estar en concordancia con lo que representa
+                    caracter[0]         ---Es la primera posicion o indice de los elementos separados 
+                    .toUpperCase        ---Pasamos el caracter[0] a mayusculas
+                    +                   ---Concatenamos (unimos) lo anterior (caracter[0]) con lo que siguiente
+                    caracter.substr(1)  ---A los elemento u objetos definidos como caracter le aplicamos el metodo substr el cual extrae los elemenetos de la cadena desde el punto que le indiquemos en este caso es (1), desde el primer caracter en adelante
+        
+        --**BOOLEANOS--**-- 
+        Representan un valor de true o false
+        - Que valores si los comporamos con un booleano nos devuelne false
+            -false
+            -null
+            -undefined
+            -NaN
+            -0
+            --0
+            - ""(cadenas vacias)
+
+//BUSCAR VALORES NUMERICOS DENTRO DE UNA CADENA 
+
+                val(valor en bruto obtenido del input)
+                    .trim()             ---Borramos espacios en blanco al inicio y al final
+                    .split("")          ---Aplicamos Split sin ningun tipo de caracter las comillas juntas, de este modo separamos todo el texto palabra por palabra
+                    .filter(Number)     ---Separamos aquellos elementos que coincidan con esta condicion, es decir que sean un numero
+
+
+//ORDEN DESCENDIENTE SIN SENSIBILIDAD ENTRE MAYUSCULAS Y minusculas
+
+Convinando estos dos metodos .sort() y .localCompare() trabajando en equipo logramos que todas las letras sean ordenadas por igual sin importar si son mayusculas o minusculas
+
+.sort((a, b) => a.localeCompare(b)) 
+
+
+
+
+
+

@@ -1,0 +1,175 @@
+****************DIA 1*************************************
+
+Presentacion del proyecto Amazing Events
+Que es Javascript?
+Extenciones de apoyo VSCODE
+
+Variables y tipos de datos
+Funciones
+SCOPE (alcance)
+Asincronicidad
+
+Como conectar nuestro html con JavaScript
+SCRIPTS
+Escuchadores de eventos
+
+TAREA
+
+Completar funcion de decremento
+
+****************DIA 2*************************************
+
+Modificar estilos desde css mediante prop style
+Operadores Mayor y menor (<>)
+Condicional If, Else If, Else
+
+TAREA
+completar condicional que reduzca la fuente de count y emita alerta antes de que desaparezca
+
+****************DIA 3*************************************
+
+Operadores Igual, diferente, And y OR (==, !=, &&, ||)
+
+TAREA 
+Agregar una condicion para que cuando el valor del contador sea negativo tenga dos colores
+Agregar una condicion que me indique que estoy en 0
+Agregar una condicion que me indique que estoy restando
+
+****************DIA 4*************************************
+Parte 1
+Manejo de inputText
+Captura de datos
+Metodos para string
+
+****************DIA 5*************************************
+Parte 2
+Manejo de inputText
+Captura de datos
+Metodos para string
+Constantes
+
+TAREA
+Asignar funciones para capturar evento change y tiene que mostrar en pantalla "Tu nombre es <nombre>, tu apellido es <apellido>, tu direccion es <direccion>
+El texto debe estar con un formato establecido (mayusculas y minusculas)
+Establecer una condicional para alguno de los datos restantes
+Definir en sus playground cuales serian constantes y porque
+
+****************DIA 6*************************************
+InputText Parte 3
+Manejo de Input con numeros
+Captura de datos numericos
+Metodos con dato tipo numero
+
+TAREA
+Separar en diferentes funciones las operaciones ya establecidas (suma, resta, multiplicacion)
+estas funciones deberan ser llamadas desde un botn igual
+
+****************DIA 7*************************************
+
+Datos Numericos Parte 2
+Manejo de Input con numeros
+Captura de datos numericos
+Metodos con dato tipo numero
+
+TAREA
+Dado el siguiente string   11,27,32,65,3,48,125,98,5,7,25,86
+
+Realize las siguientes calculos.
+Cantidad total de numeros.
+Suma de todos lo numeros.
+Resta de todos los numeros.
+Promedio.
+Mayor y menor
+Mayores y Menores que 40
+
+
+****************DIA 8*************************************
+
+Datos complejos, objetos y arrays
+Ciclos
+Metodos con datos complejos
+Renderizados dinamicos - creacion de templates
+
+****************DIA 9*************************************
+
+Metodos de de filtrado
+CheckBox dinamicos desde Array
+Captura de datos de checkbox
+
+****************DIA 10*************************************
+
+Manejo de InputSelect
+Manejo de checkbox
+Obtencion de datos y filtrados
+Promesas
+Switch
+JSON y fetch
+
+****************DIA 11*************************************
+Envio de paramtros entre paginas (ej id desde home a detalle de producto)
+
+****************DIA 12*************************************
+
+Manejo de Input con fechas
+Captura de datos fechas
+Metodos con dato tipo fechas
+
+****************DIA 13*************************************
+
+Funciones (tipos)
+Anidamiento de funciones
+****************DIA 14*************************************
+
+Validacion de formularios
+
+****************DIA 15*************************************
+
+
+
+****************DIA 16*************************************
+
+API REST Ajax
+
+
+
+
+
+ETAPAS AMAZING EVENTS 
+
+1 Mail task1
+  - Rediseñar HTML y CSS 
+
+2 Mail task2
+  - Incorporar informacion dinamica desde JSON 
+  - Incorporar filtro por fechas para eventos pasados y proximos
+  - Incorporar filtro por input search y select por categoria en home
+  - Incorporar detalle de evento seleccionado
+
+3 Mail task3
+  - Vincular pagina de detalle con evento seleccionado
+  - Incorporar pagina Summary con estadisticas para Admin 
+        DATOS MINIMOS
+        - Eventos con mayor y menor porcentaje de audiencia
+        - Eventos con mayor capacidad
+        - Ingreso por categorias
+        - Porcentaje de asistencia por categoria
+  - Implementar con boostrap
+
+  Entrega Martes 8 a las 9hs
+
+   
+4 Mail task4
+  - Incorporar informacion dinamica desde API 
+
+
+  ACLARACIONES Amazing Events task2
+  Todas las paginas deben tener un link con el resto de las paginas (solo la de detalle no debe estar ya que se va a visualizar al hacer click en la card o en un boton de esta, desde detalle debo poder volver a las otras pagina
+  HOME, puede ser una introduccion general a la empresa (si usan este modelo el diseño tiene que ser genial), 
+        puede tener una porcion de las tarjetas de eventos pasados o futuros (dos, tres), 
+        puede tener todas las cards en esta pagina (si lo realizan asi incluyan el filtro de busqueda por texto (inputSearch) en esta pagina), 
+  PAGINAS EVENTOS PASADOS Y FUTUROS, deben contener el total de eventos pasados o futuros en sus respectivas paginas. 
+  HOME, EVENTOS PASADOS, EVENTOS FUTUROS, los cards que contengan dinamicos. 
+  DETALLE, a esta pagina debo poder acceder al hacer click en cualquiera de la cards (ESTA ES LA UNICA QUE SE PERMITE ESTATICA ya que en el proximo modulo vamos a ver como vincular los id para hacerlas dinamicas),
+   y por ultimo en alguna de las paginas debe haber un filtro ya sea por select o por checkbos, el que utilizen es a elexion suya, yo les recomiendo que este filtre por categorias
+   ademas del inputSearch
+

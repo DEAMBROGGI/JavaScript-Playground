@@ -1,0 +1,19 @@
+RETURN EN Funciones
+
+Se utiliza return en una funcion cundo esta de devolvernos un valor de retorno como por ejemplo 
+
+Mi funcion X dentro de su estructura llama a la funcion volumen que esta fuera de esta para que calcule el volumen de un objeto 
+y le envia los parametros necesarios para calcularlo.
+
+functionX(){
+......realiza otras operaciones.....
+
+
+var volumenObjeto = volumen(13,12,15) --- la variable volumenObjeto guardara el return de la funcion y los parametros en el orden que se pasan son en el orden que los recibe la funcion
+  console.log(volumenObjeto)          --- si la funcion volumen no posee declarado su retorn ara la operacion pero no devolvera ningun valor, dando como resultado undefined
+
+}
+
+function volumen(base, altura, profundidad){  ----recibe los parametros desde donde fue llamada en el mismo orden de como se enviaron
+          return  base*altura*profundidad     ----ejecuta la operacion y retorna el valor resultante de la misma 
+}

@@ -1,0 +1,52 @@
+Las expresiones regulares establece un patron para buscar, capturar o reemplazar texto en una cadena (string)
+pueden ser utilizadas con los metodos 
+        - exec()
+        - test()
+        - match()
+        - matchAll()
+        - replace()
+        - replaceAll()
+        - search()
+        - split()
+
+Pueden consultar informacion detallada de cada uno de los metodos en 
+https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions
+https://regexr.com/
+
+/+/Como crear una expresion regular 
+
+/ /         ---Marcan el inicio y fin de la expresion a crear
+/abcd/      ---Para crear un patron simple tenemos que colocar el patron a comparar dentro de las barras
+
+
+/+/Alguna expresiones de ejemplo
+
+/[( )]+/    ---Busca todos los espacios en blanco o vacios dentro de una cadena (string)
+/\b[a-z]/g  ---\b busca el inicio de una palabra, [a-z] es el tipo de palabra a buscar, g lo repite durante todo el string
+/ /g        ---Busca un espacios y con g repite la busqueda durante todo el sting
+/[0-9]{2}/  ---Busca que contenga dos numeros consecutivos, no posee g asi que no lo realiza durante todo el string
+
+
+/+/Ejemplo alternativos del playground usando Expresiones Regulares
+
+//PARA DAR FORMATO A APELLIDO CON EXPRESION REGULAR
+        var apellidoRegExp = val
+                  .trim()
+                  .split(/[( )]+/)
+                  .join(" ")
+                  .replace(/\b[a-z]/g,c=>c.toUpperCase())
+        console.log(apellidoRegExp)
+
+//METODO PARA ENONTRAR NUMEROS EN CADENA CON EXPRESION REGULAR
+        var direccionConNumero = /[0-9]{2}/.test(datoCorrecto)
+
+//METODO PARA QUITAR TODOS LOS ESPACION EN BLANCO DE CADENA CON EXPRESION REGULAR
+var limpiarEspacios =  val.replace(/ /g, "") //El metodo remmplace posee dos partes la primera lo que esta antes de la coma (,), representa que voy a buscar y la segunda que esta despues de la coma (,) representa porque la voy a cambiar
+                                             // antes de la coma tenemos una expresion regular o RegEx, lo que esta entre las barras es lo que evalua en este caso un espacio en blanco
+                                             //--- la representa que lo va a evaluar tantas veces como lo encuentre
+                                             //--- y lo va reemplazar por lo que se encuentra despues de la coma
+console.log(limpiarEspacios)
+
+//PARA BUSCAR UN ID EN LA URL
+
+var id = location.search.match(/id=(\d)*/)[1]

@@ -1,0 +1,60 @@
+UTILIZACION DE SORT Y FUNCION DE ORDENAMIENTO PARA ORDENAR ARREGLO DE NUMEROS
+
+El metodo sort ordena los valores obtenidos mediante la asignacion de valores a las letras, logrando asi un ordenamiento alfabetico
+
+Ejemplo (Esta asignacion ya esta definida en el metodo)
+A=1
+B=2
+C=3
+D=4
+
+Si tenemes esos datos y los queremos ordenar con sort el resultado seria el siguiente
+
+DATOS EN BRUTO
+[AC, C, BA, AD]
+[13, 3, 21, 14]
+
+RESULTADOS
+[AC, AD , BA, C] Los ordena perfectamente alfabeticamente y tengan en cuenta que es sensible a mayusculas, es decir ordena primero mayusculas y luego por minusculas  
+[13, 14 , 21, 3] En el caso de los numeros es diferente el tres que deberia estar primero esta ultimo, esto ocurre ya que no tiene en cuenta el valor del numero sino su correspondiente asignacion en letras, las C son 3 y van despues de las A que son 1 y las ve que son 2
+
+Para resolver este problema debemos acompañar el metodo sort con una funcion de ordenamiento
+
+sort(function(a,b){return a - b}
+
+esta convinacion de metodos y funciones establece que si a - b es es negativo
+
+si el resultado de a - b es es negativo se coloca a antes que b
+si el resultado de a - b es es positivo se coloca b antes que a 
+
+Veamos como en el ejemplo, la comparacion se realiza y los reseltados que arroja
+
+sort le dice que a la funcion que el orden que le establecio alfabeticamente es el siguiente y la funcion se debe encaragar de darle el orden numerico (trabajo en equipo)
+[13, 14 , 21, 3]
+
+a     b     return (los a, b y return de la funcion de ordenamiento)
+13 -  14    = -1  OK el orden es correcto
+13 -  21    = -8  OK el orden es correcto
+13 -  3     = 10  NO OK el orden es incorrecto b va antes que a
+14 -  21    = -11 OK el orden es el correcto
+14 -  3     = 11  NO ok el orden es incorrecto b va antes que a
+21 -  3     = 18  NO ok el orden es incorrecto b va antes que a
+
+Nos da como resultado [3,13,14,21]
+
+Para invertir el orden de ascendiente a descendiente basta con cambiar el orden de la funcion de ordenamineto de a - b por b - a
+Eso nos dara como resultado [21,14,13,3]
+
+METODOS UTILIZADOS CON NUMEROS
+
+var min = Math.min(...anumero)           //Utilizo un Metodo Matematico ya preestablecido para buscar dentro del arreglo el valor minimo (...anumero) busca dentro del arreglo y no sobre el arreglo
+var max = Math.max(...anumero)           //Misma logica anterior pero con mayor numero
+console.log(Number(dividir.toFixed(4)))  //toFixed, limita la cantidad de caracteres decimales en este caso a 4, este se encuentra contenido en un metodo Number para que sea transformado a numero ya que el valor que devuelve toFixed es string
+console.log(Math.round(dividir))         //round se ocupa de redondear el numero a entero es decir ej si el valor es 1.65 lo pasa a 2 y si es 1.33 lo pasa a uno
+console.log(Math.ceil(dividir))          //ceil redondea el valor hacia arriba
+console.log(Math.floor(dividir))         //floor redondea hacia abajo
+console.log(Math.PI)                     //Nos trae el valor de PI
+
+
+En el siguiente link podras encontrar todos los metodos Math definidos hasta el momento
+https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math
