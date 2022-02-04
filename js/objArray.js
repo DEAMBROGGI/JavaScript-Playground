@@ -210,7 +210,7 @@ function displayCard(data) { //La funcion display recibe el parametro data desde
         <img src="${pais.bandera}">
         </div>
         <div class="dataCard">
-        <h2><a href="detalle.html?id=${pais.id}" >${pais.name}</a></h2>
+        <h2>${pais.name}</h2>
             <p>Capital:${pais.capital}</p>
             <p>Continente:${pais.continent}</p>
            
