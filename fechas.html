@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/navBar.css">
+    <link rel="stylesheet" href="./style/fechas.css">
+    <link rel="stylesheet" href="./style/media.css">
+    <title>Practica-js-InputText</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="btnNav">
+            <button  >
+                <a href="index.html"aria-label="Boton Home" tabindex="-1" >Counter</a>
+            </button>
+            <button >
+                <a href="inputText.html"tabindex="2">InputText</a>
+            </button>
+            <button >
+                <a href="numbers.html"tabindex="2">Numbers</a>
+            </button>
+            <button >
+                <a href="objArray.html"tabindex="2">ObjArray</a>
+            </button>
+            <button >
+                <a href="./TablasDinamicas/tabla.html"tabindex="2">Tabla</a>
+            </button>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="formatos"></div>
+        <div class="inputs">
+            <label for="fecha1">Ingresa fecha1</label>
+            <input type="date" id="fecha1" >
+
+            <label for="fecha2">Ingresa fecha2</label>
+            <input type="date" name="fecha2" id="fecha2">           
+        </div>
+        <div id="results"></div>
+        <div id="tiposInputs">
+            <h4>Tipos de Input Date</h4>
+            <label for="fecha y hora">Fecha y hora</label>
+            <input type="datetime-local"  id="fecha y hora"> 
+            <label for="fecha">Fecha </label>
+            <input type="date" id="fecha"> 
+            <label for="mes">Mes </label>
+            <input type="month" id="mes">
+            <label for="semana">Semana </label>
+            <input type="week" id="semana">
+            <label for="time">Hora </label>
+            <input type="time" id="time">
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="./js/fechas.js"></script>
+</body>
+
+</html>
